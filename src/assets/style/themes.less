@@ -1,0 +1,81 @@
+// 背景色
+@bg-color-menu: #ededed;
+@bg-color-top: #f9f9f9;
+@bg-color-mian: #ffffff;
+// 字体颜色
+@color-title: rgba(0, 0, 0, .8);
+@color-text-level-1: #696969;
+@color-text-level-2: #a1a1a1;
+@color-red: #d33a31;
+@color-white: #ffffff;
+// 字体是否加粗
+// @font-weight: bold;
+@font-weight: normal;
+// 字体大小
+@font-size: 8rem;
+@font-size-small: 5rem;
+@font-size-medium: 6.5rem;
+@font-size-title-lg: 10rem;
+@font-size-title-sm: 9.4rem;
+@font-size-title: 15rem;
+
+@table-hover-white: #f8f8f8;
+@border-color: #dddddd;
+@menu-active-bg: #e2e2e2;
+
+// 播放按钮类
+.play-hidden {
+  opacity: 0;
+  width: 16rem;
+  height: 16rem;
+  cursor: pointer;
+  background-color:@color-red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 16rem;
+}
+
+// 播放按钮显示
+.play-show {
+  transition: all 0.2s;
+  opacity: 1;
+}
+
+// 文字溢出
+.text-overflow {
+  white-space: nowrap; //断行处理：无断行
+  text-overflow: ellipsis; //文字溢出处理：省略号
+  overflow: hidden; //溢出处理：隐藏
+}
+
+// hover
+.box-hover {
+  transition: all 0.3s;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  transition: all 0.2s;
+}
+
+// 滚动条
+.scroll {
+  /* 设置滚动条的样式 */
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* 滚动槽 */
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+
+  /* 滚动条滑块 */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
